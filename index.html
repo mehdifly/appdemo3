@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Demo App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true">
+    <li><a data-transition="slide" href="#bar1">
+        <img src="http://demos.jquerymobile.com/1.4.5/_assets/img/album-bb.jpg">
+    <h2>Broken Bells</h2>
+    <p>Broken Bells</p></a>
+    </li>
+    <li><a data-transition="slide" href="#bar2">
+        <img src="http://demos.jquerymobile.com/1.4.5/_assets/img/album-hc.jpg">
+    <h2>Warning</h2>
+    <p>Hot Chip</p></a>
+    </li>
+    <li><a data-transition="slide" href="#bar3">
+        <img src="http://demos.jquerymobile.com/1.4.5/_assets/img/album-p.jpg">
+    <h2>Wolfgang Amadeus Phoenix</h2>
+    <p>Phoenix</p></a>
+    </li>
+</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar1">
+
+	<div data-role="header">
+		<h1>Bar1</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all" href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="bar2">
+
+	<div data-role="header">
+		<h1>Bar2</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all" href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+</div>
+
+
+<div data-role="page" id="bar3">
+
+	<div data-role="header">
+		<h1>Bar3</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all" href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+</div>
+</body>
+</html>
